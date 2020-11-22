@@ -27,7 +27,7 @@ fi
 echo "Running yosys to synthesize cpu."
 echo "Ensure that 'synth.ys' lists all the modules needed for the synthesis,"
 echo "and that the top module is called 'cpu'"
-yosys synth.sys
+yosys synth.ys
 
 if [ $? != 0 ]; then
     echo "Synthesis failed.  Please check for error messages."
